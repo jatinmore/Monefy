@@ -1,0 +1,2 @@
+# Monefy
+ Cash register manager
