@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="app.css">
     <title>Monefy</title>
 </head>
+
 <body>
-    <header><h1>Monefy</h1>
-        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>      
+    <header>
+        <h1>Monefy</h1>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
     </header>
     <div class="main">
-      <input type="text" id="Bill-Amt" placeholder="Bill Amount">
-      <br>
-      <input type="text" id="Cash-given" placeholder="Cash Given">
+        <input type="number" id="Bill-Amt" placeholder="Bill Amount">
+        <br>
+        <input type="number" id="Cash-given" placeholder="Cash Given">
+        
+        <button id="btn-check">Check</button>
+        
         <p id="error-msg"></p>
-      
-      <button id="btn-check">Check</button>
-    
     </div>
 
     <div class="table-data">
         <table>
             <caption>Return Change</caption>
             <tr>
-            <th>No of Notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-          
-        </tr>
+                <th>No of Notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
 
-        <tr>
-            <th>Notes</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>200</td>
-            <td>100</td>
-            <td>50</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
-        </tr>
+            </tr>
+
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
         </table>
 
     </div>
 
     <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
